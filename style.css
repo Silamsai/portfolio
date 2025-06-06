@@ -36,3 +36,19 @@ body {
     padding-left: 1.2rem;
   }
 }
+#about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;        /* Makes it circular */
+  border: 4px solid #4CAF50; /* Green circular border - change color as you like */
+  box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Soft shadow for 3D effect */
+  object-fit: cover;         /* Ensures image covers the area without distortion */
+  display: block;
+  margin: 1rem auto;         /* Center the image horizontally */
+  transition: transform 0.3s ease;
+}
+
+#about img:hover {
+  transform: scale(1.05);    /* Slight zoom on hover */
+  border-color: #388E3C;     /* Darker green on hover */
+}
